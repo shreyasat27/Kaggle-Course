@@ -1,0 +1,80 @@
+#basics of programming 
+
+#for print
+print("hello duniya")
+
+#code inside the box is called - code cell and hello duniya is output that computer has given
+
+#python follows the rule of PAMDAS (https://www.mathsisfun.com/operation-order-pemdas.html) to calculate arthmetic questions
+print(((1 + 3) * (9 - 2) / 2) ** 2)
+
+
+#the result isn't saved anywhere. However, if you might want to save the result to work with it later. For this, you'll need to use variables.
+my_age = 4+10
+my_age
+
+#You can also change the variable value by defining it as a new value, then the computer will only remember the newly assigned value and overwrite the previously written value. 
+my_age = 34
+my_age
+
+#first machine learning model just to get a little experience on how this works
+https://www.kaggle.com/code/satshreya/getting-started-with-titanic-in-2023 
+
+#tutorial link 
+https://www.kaggle.com/code/alexisbcook/titanic-tutorial/notebook
+
+#Intro to functions
+# Define the function
+def add_three(input_var):
+    output_var = input_var + 3
+    return output_var
+    
+# Run the function with 10 as input
+new_number = add_three(10)
+
+# Check that the value is 13, as expected
+print(new_number)
+
+#example 2 
+def get_pay(num_hours):
+    # Pre-tax pay, based on receiving $15/hour
+    pay_pretax = num_hours * 15
+    # After-tax pay, based on being in 12% tax bracket
+    pay_aftertax = pay_pretax * (1 - .12)
+    return pay_aftertax
+    
+# Calculate pay based on working 40 hours
+pay_fulltime = get_pay(40)
+print(pay_fulltime)
+#for a different person having different hours of working 
+pay_parttime = get_pay(32)
+print(pay_parttime)
+
+#functions with multiple arguements 
+def get_pay_with_more_inputs(num_hours, hourly_wage, tax_bracket):
+    # Pre-tax pay
+    pay_pretax = num_hours * hourly_wage
+    # After-tax pay
+    pay_aftertax = pay_pretax * (1 - tax_bracket)
+    return pay_aftertax
+higher_pay_aftertax = get_pay_with_more_inputs(40, 24, .22)
+print(higher_pay_aftertax)
+
+#Round to 5 decimal places for float
+rounded_pi = round(almost_pi, 5)
+print(rounded_pi)
+print(type(rounded_pi))
+
+#conversion of data types 
+
+also_my_number = float(my_number)
+print(also_my_number)
+print(type(also_my_number))
+
+new_string = "abc" + "def"
+print(new_string)
+print(type(new_string))
+#Note that you cannot multiply a string by a float! Trying to do so will return an error.
+
+
+
